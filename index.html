@@ -1,120 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Karar.it - Conversational Agreements</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Bootstrap 4-->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <!--icons-->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <link rel="stylesheet" href="js/countdown/jquery.countdown.css" />
-    </head>
-    <body>
-        <!--hero section-->
-        <section class="bg-white hero p-0">
-            <div class="container-fluid">
+  <head>
+    <meta charset="utf-8" />
+    <title>karar - Conversational Agreements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+    <!--icons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="js/countdown/jquery.countdown.css" />
+  </head>
+  <body>
+    <!--hero section-->
+    <section class="bg-white hero p-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-5 bg-light text-center col-fixed">
+            <a
+              href="/"
+              aria-current="page"
+              class="w-nav-brand w--current"
+              aria-label="home"
+              ><img
+                src="img/karar-logo.png"
+                width="300"
+                alt="karar-logo.png"
+                sizes="300px"
+                title="logo"
+            /></a>
+
+            <h3>Conversational Agreements</h3>
+            <p class="mt-4">
+              We enable seamless peer-to-peer agreements via WhatsApp <br />
+              with integrated AI drafting, E-Sign and E-Stamp
+            </p>
+            <div class="launch-text">We're launching soon.</div>
+            <ul id="timer">
+              <li>
+                <span class="days">00</span>
+                <p class="days_text">Days</p>
+              </li>
+              <li class="seperator">:</li>
+              <li>
+                <span class="hours">00</span>
+                <p class="hours_text">Hours</p>
+              </li>
+              <li class="seperator">:</li>
+              <li>
+                <span class="minutes">00</span>
+                <p class="minutes_text">Minutes</p>
+              </li>
+              <li class="seperator">:</li>
+              <li>
+                <span class="seconds">00</span>
+                <p class="seconds_text">Seconds</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-7 offset-sm-5 px-0 py-5">
+            <!--Why This Domain-->
+            <section class="pt-4">
+              <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-5 bg-light text-center col-fixed">
-                        <h1 class="pt-4 h2"><span class="text-green">Karar.it</span></h1>
-                        <h3>Conversational Agreements</h3>
-                        <p class="mt-4">
-                          We enable seamless peer-to-peer agreements via WhatsApp <br/> with integrated AI drafting, E-Sign and E-Stamp
-                        </p>
-                        <div class="launch-text">We're launching soon.</div>
-                        <ul id="timer">
-                            <li><span class="days">00</span><p class="days_text">Days</p></li>
-                            <li class="seperator">:</li>
-                            <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
-                            <li class="seperator">:</li>
-                            <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-                            <li class="seperator">:</li>
-                            <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-7 offset-sm-5 px-0 py-5">
-                        <!--Why This Domain-->
-                        <section class="pt-4">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-8 mx-auto text-center">
-                                        <h2 class="text-primary pb-3">About Us</h2>
-                                        <p class="text-muted">
-                                          We're a team of people who wants to make agreements easier for everyone. We want to enable you to draft, sign and stamp agreements via WhatsApp
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row d-md-flex mt-4">
-                                    <div class="col-sm-4 mt-2 text-center">
-                                      <ion-icon class="mb-3 icon-md text-primary"  name="chatbubble-ellipses-outline"></ion-icon>
-                                        <h4>Draft with AI</h4>
-                                        <p class="text-muted">Create legally-sound agreements effortlessly with AI.</p>
-                                    </div>
-                                    <div class="col-sm-4 mt-2 text-center">
-                                      <ion-icon class="mb-3 icon-md text-primary" name="finger-print"></ion-icon>
-                                        <h4>E-Sign</h4>
-                                        <p class="text-muted">Legally sign documents directly through WhatsApp.</p>
-                                    </div>
-                                    <div class="col-sm-4 mt-2 text-center">
-                                      <ion-icon class="mb-3 icon-md text-primary"  name="ribbon-outline"></ion-icon>
-                                        <h4>E-Stamp</h4>
-                                        <p class="text-muted">Complete transactions with government-verified e-stamping.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!--contact-->
-                        <section class="mt-1 p-3" id="contact">
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-sm-8 mx-auto text-center">
-                                    <h2 class="text-primary pb-3">Contact Us</h2>
-                                    <p class="text-muted">
-                                        We will be launching very soon. <br /> Get in touch to become an early partner!
-                                    </p>
-                                </div>
-                            </div>
-                                <div class="row d-md-flex text-primary text-center">
-                                    <div class="col-sm-4 p-5">
-                                      <ion-icon class="mb-3 icon-md"  name="call-outline"></ion-icon>
-                                        <h5>+91 98953 47638</h5>
-                                    </div>
-                                    <div class="col-sm-4 p-5">
-                                      <ion-icon class="mb-3 icon-md"  name="mail-outline"></ion-icon>
-                                        <h5>hello@karar.it</h5>
-                                    </div>
-                                    <div class="col-sm-4 p-5">
-                                      <ion-icon class="mb-3 icon-md"  name="location-outline"></ion-icon>
-                                        <h5>On your Mobile</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!--footer-->
-                        <section class="p-3">
-                            <div class="container">
-                                <div class="row mr-5 ml-5">
-                                    <div class="col-sm-12">
-                                        <p class="text-muted text-center">
-                                            &copy; 2024 Karar.it - All Rights Reserved
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+                  <div class="col-sm-8 mx-auto text-center">
+                    <h2 class="text-primary pb-3">About Us</h2>
+                    <p class="text-muted">
+                      We're a team of people who wants to make agreements easier
+                      for everyone. We want to enable you to draft, sign and
+                      stamp agreements via WhatsApp
+                    </p>
+                  </div>
                 </div>
-            </div>
-        </section>
+                <div class="row d-md-flex mt-4">
+                  <div class="col-sm-4 mt-2 text-center">
+                    <ion-icon
+                      class="mb-3 icon-md text-primary"
+                      name="chatbubble-ellipses-outline"
+                    ></ion-icon>
+                    <h4>Draft with AI</h4>
+                    <p class="text-muted">
+                      Create legally-sound agreements effortlessly with AI.
+                    </p>
+                  </div>
+                  <div class="col-sm-4 mt-2 text-center">
+                    <ion-icon
+                      class="mb-3 icon-md text-primary"
+                      name="finger-print"
+                    ></ion-icon>
+                    <h4>E-Sign</h4>
+                    <p class="text-muted">
+                      Legally sign documents directly through WhatsApp.
+                    </p>
+                  </div>
+                  <div class="col-sm-4 mt-2 text-center">
+                    <ion-icon
+                      class="mb-3 icon-md text-primary"
+                      name="ribbon-outline"
+                    ></ion-icon>
+                    <h4>E-Stamp</h4>
+                    <p class="text-muted">
+                      Complete transactions with government-verified e-stamping.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-        <script src="js/countdown/jquery.countdown.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+            <!--contact-->
+            <section class="mt-1 p-3" id="contact">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8 mx-auto text-center">
+                    <h2 class="text-primary pb-3">Contact Us</h2>
+                    <p class="text-muted">
+                      We will be launching very soon. <br />
+                      Get in touch to become an early partner!
+                    </p>
+                  </div>
+                </div>
+                <div class="row d-md-flex text-primary text-center">
+                  <div class="col-sm-4 p-5">
+                    <ion-icon
+                      class="mb-3 icon-md"
+                      name="call-outline"
+                    ></ion-icon>
+                    <h5>+91 98953 47638</h5>
+                  </div>
+                  <div class="col-sm-4 p-5">
+                    <ion-icon
+                      class="mb-3 icon-md"
+                      name="mail-outline"
+                    ></ion-icon>
+                    <h5>hello@karar.it</h5>
+                  </div>
+                  <div class="col-sm-4 p-5">
+                    <ion-icon
+                      class="mb-3 icon-md"
+                      name="location-outline"
+                    ></ion-icon>
+                    <h5>On your Mobile</h5>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--footer-->
+            <section class="p-3">
+              <div class="container">
+                <div class="row mr-5 ml-5">
+                  <div class="col-sm-12">
+                    <p class="text-muted text-center">
+                      &copy; 2024 karar - All Rights Reserved
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> -->
+    <script src="js/countdown/jquery.countdown.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
