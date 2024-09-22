@@ -2,24 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>karar - Conversational Agreements</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Bootstrap 4-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-    />
-    <!--icons-->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <link rel="stylesheet" href="js/countdown/jquery.countdown.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!--hero section-->
@@ -27,7 +12,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-5 bg-light text-center col-fixed">
-            <a
+            <!-- <a
               href="/"
               aria-current="page"
               class="w-nav-brand w--current"
@@ -38,8 +23,8 @@
                 alt="karar-logo.png"
                 sizes="300px"
                 title="logo"
-            /></a>
-
+            /></a> -->
+            <h1 class="pt-4 h2"><span class="text-primary">karar</span></h1>
             <h3>Conversational Agreements</h3>
             <p class="mt-4">
               We enable seamless peer-to-peer agreements via WhatsApp <br />
@@ -84,10 +69,13 @@
                 </div>
                 <div class="row d-md-flex mt-4">
                   <div class="col-sm-4 mt-2 text-center">
-                    <ion-icon
+                    <div class="mb-2">
+                      <i class="fs-1 bi-chat-left-dots text-primary"></i>
+                    </div>
+                    <!-- <ion-icon
                       class="mb-3 icon-md text-primary"
                       name="chatbubble-ellipses-outline"
-                    ></ion-icon>
+                    ></ion-icon> -->
                     <h4>Draft with AI</h4>
                     <p class="text-muted">
                       Create legally-sound agreements effortlessly with AI.
@@ -171,11 +159,15 @@
         </div>
       </div>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> -->
-    <script src="js/countdown/jquery.countdown.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <!--icons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
