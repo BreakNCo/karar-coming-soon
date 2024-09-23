@@ -106,6 +106,8 @@ body {
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Sacramento');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 html,
 body {
@@ -114,15 +116,22 @@ body {
   color: #3e396b;
 }
 body {
-  font-family: 'Poppins';
-  font-size: 14px;
+  font-family: 'Roboto Flex';
+  font-size: 15px;
 }
+.logo {
+  font-family: "Inter";
+}
+.tagline {
+  font-family: 'Poppins';
+}
+
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: 'Poppins';
+  font-family: 'Roboto Flex';
 }
 .launch-text {
   font-family: 'Sacramento';
