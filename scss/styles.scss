@@ -33,6 +33,7 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 // Include functions first
 @import "bootstrap/scss/functions";
 
+
 // Customize some defaults
 $body-color: #333;
 $body-bg: #fff;
@@ -109,6 +110,18 @@ body {
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Sacramento');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+@font-face {
+  font-family: 'BespokeStencil-Bold';
+  src: url('../fonts/BespokeStencil-Bold.woff2') format('woff2'),
+       url('../fonts/BespokeStencil-Bold.woff') format('woff'),
+       url('../fonts/BespokeStencil-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
 
 html,
 body {
@@ -186,11 +199,11 @@ h5,
   font-size: 1rem;
 }
 .hero h1 span {
-  font-weight: 400;
-  font-family: "Playwrite DE Grund";
+  font-weight: 650;
+  font-family: "BespokeStencil-Bold";
 }
 a {
-  color: #ffb32e;
+  color: #3e396b;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -292,7 +305,7 @@ section {
   color: #d9edf7;
 }
 .text-dark {
-  color: #37474f;
+  color: #3e396b;
 }
 .text-muted {
   color: #999 !important;
