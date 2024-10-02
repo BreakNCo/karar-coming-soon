@@ -123,6 +123,16 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'BespokeStencil-Medium';
+  src: url('../fonts/BespokeStencil-Medium.woff2') format('woff2'),
+       url('../fonts/BespokeStencil-Medium.woff') format('woff'),
+       url('../fonts/BespokeStencil-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100%;
@@ -133,9 +143,7 @@ body {
   font-family: 'Roboto Flex';
   font-size: 15px;
 }
-.logo {
-  font-family: "Inter";
-}
+
 .tagline {
   font-family: 'Poppins';
 }
@@ -164,6 +172,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Poppins';
   font-weight: 600;
 }
 .brand-logo {
@@ -200,7 +209,7 @@ h5,
 }
 .hero h1 span {
   font-weight: 650;
-  font-family: "BespokeStencil-Bold";
+  font-family: "BespokeStencil-Medium";
 }
 a {
   color: #3e396b;
