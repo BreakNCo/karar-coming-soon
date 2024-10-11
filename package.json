@@ -7,14 +7,14 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn run css",
-    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
-    "css-lint": "stylelint scss/",
+    "compile:css": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
+    "lint:css": "stylelint scss/",
     "css-prefix": "postcss --replace css/styles.css --use autoprefixer --map",
-    "css": "npm-run-all css-compile css-prefix",
+    "css": "npm-run-all compile:css css-prefix",
     "server": "sirv --dev --no-clear --port 3000",
     "start": "npm-run-all --parallel watch server",
-    "watch": "nodemon -e html,js,scss -x \"yarn run css\"",
-    "test": "npm-run-all css-lint css"
+    "watch": "nodemon -e html,js,scss -x \"yarn css\"",
+    "test": "npm-run-all lint:css css"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
