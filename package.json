@@ -1,13 +1,10 @@
 {
-  "name": "sass-js",
-  "description": "Include Bootstrap's source Sass and compiled JavaScript bundle via npm.",
-  "version": "0.0.0",
+  "name": "karar-coming-soon",
+  "description": "karar Coming Soon website",
+  "version": "0.0.1",
   "private": true,
-  "repository": "twbs/examples",
+  "repository": "https://github.com/BreakNCo/karar-coming-soon",
   "license": "MIT",
-  "stackblitz": {
-    "startCommand": "npm start"
-  },
   "scripts": {
     "build": "npm run css",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
