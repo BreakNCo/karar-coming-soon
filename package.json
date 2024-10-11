@@ -6,14 +6,14 @@
   "repository": "https://github.com/BreakNCo/karar-coming-soon",
   "license": "MIT",
   "scripts": {
-    "build": "npm run css",
+    "build": "yarn run css",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace css/styles.css --use autoprefixer --map",
     "css": "npm-run-all css-compile css-prefix",
     "server": "sirv --dev --no-clear --port 3000",
     "start": "npm-run-all --parallel watch server",
-    "watch": "nodemon -e html,js,scss -x \"npm run css\"",
+    "watch": "nodemon -e html,js,scss -x \"yarn run css\"",
     "test": "npm-run-all css-lint css"
   },
   "dependencies": {
