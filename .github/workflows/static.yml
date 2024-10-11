@@ -45,6 +45,10 @@ jobs:
       - name: Build project
         run: yarn build
 
+      # Remove node_modules to avoid uploading them to GitHub Pages
+      - name: Remove node_modules
+        run: rm -rf node_modules
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
