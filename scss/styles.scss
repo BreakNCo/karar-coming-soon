@@ -432,3 +432,110 @@ section {
 .address {
   font-size: 13px;
 }
+
+.pricing-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Pricing plans container */
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Individual plans */
+.plan {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  position: relative;
+}
+
+.plan h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.plan .subtext {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.plan .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.plan .price .extra {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.plan button {
+  background-color: #ffa200;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.plan button:hover {
+  background-color: #dd8d00;
+}
+
+.plan .note {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 10px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.plan ul li {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Specific plan styles */
+.regular {
+  border-color: #ccc;
+}
+
+.member {
+  border-color: #ffa200;
+  box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.member .tag {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ffa200;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}
