@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -28,36 +27,35 @@
 $enable-gradients: true;
 $enable-shadows: true;
 
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
 // Include functions first
-@import "bootstrap/scss/functions";
-
+@import 'bootstrap/scss/functions';
 
 // Customize some defaults
 $body-color: #333;
 $body-bg: #fff;
-$border-radius: .4rem;
+$border-radius: 0.4rem;
 $success: #7952b3;
 
 // Required
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/variables-dark";
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
-@import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot";
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/reboot';
 
-@import "bootstrap/scss/type";
+@import 'bootstrap/scss/type';
 // @import "bootstrap/scss/images";
-@import "bootstrap/scss/containers";
-@import "bootstrap/scss/grid";
+@import 'bootstrap/scss/containers';
+@import 'bootstrap/scss/grid';
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
-@import "bootstrap/scss/dropdown";
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/transitions';
+@import 'bootstrap/scss/dropdown';
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/nav";
 // @import "bootstrap/scss/navbar"; // Requires nav
@@ -69,51 +67,49 @@ $success: #7952b3;
 // @import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/close";
+@import 'bootstrap/scss/close';
 // @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
+@import 'bootstrap/scss/modal'; // Requires transitions
 // @import "bootstrap/scss/tooltip";
-@import "bootstrap/scss/popover";
+@import 'bootstrap/scss/popover';
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
-@import "bootstrap/scss/offcanvas"; // Requires transitions
+@import 'bootstrap/scss/offcanvas'; // Requires transitions
 // @import "bootstrap/scss/placeholders";
 
 // Helpers
 // @import "bootstrap/scss/helpers";
 
 // Utilities
-@import "bootstrap/scss/utilities/api";
+@import 'bootstrap/scss/utilities/api';
 
 //
 // Import Bootstrap Icons w/ custom path to fonts folder
 //
-$bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
-@import "bootstrap-icons/font/bootstrap-icons";
+$bootstrap-icons-font-dir: '../node_modules/bootstrap-icons/font/fonts';
+@import 'bootstrap-icons/font/bootstrap-icons';
 
 //
 // Custom styles
 //
 
-@import "icon-list";
-@import url("../js/countdown/jquery.countdown.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+@import 'icon-list';
+@import url('../js/countdown/jquery.countdown.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
 
 body {
   // padding: 1.5rem;
 }
 
-
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Sacramento');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-
 @font-face {
   font-family: 'BespokeStencil-Bold';
   src: url('../fonts/BespokeStencil-Bold.woff2') format('woff2'),
-       url('../fonts/BespokeStencil-Bold.woff') format('woff'),
-       url('../fonts/BespokeStencil-Bold.ttf') format('truetype');
+    url('../fonts/BespokeStencil-Bold.woff') format('woff'),
+    url('../fonts/BespokeStencil-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -122,8 +118,8 @@ body {
 @font-face {
   font-family: 'BespokeStencil-Medium';
   src: url('../fonts/BespokeStencil-Medium.woff2') format('woff2'),
-       url('../fonts/BespokeStencil-Medium.woff') format('woff'),
-       url('../fonts/BespokeStencil-Medium.ttf') format('truetype');
+    url('../fonts/BespokeStencil-Medium.woff') format('woff'),
+    url('../fonts/BespokeStencil-Medium.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -205,7 +201,7 @@ h5,
 }
 .hero h1 span {
   font-weight: 650;
-  font-family: "BespokeStencil-Medium";
+  font-family: 'BespokeStencil-Medium';
 }
 a {
   color: #3e396b;
@@ -224,7 +220,8 @@ a:focus {
 .footer a {
   color: inherit !important;
 }
-footer a:hover, a:focus {
+footer a:hover,
+a:focus {
   color: inherit !important;
 }
 a.btn:hover,
@@ -502,13 +499,24 @@ section {
 .plan ul {
   list-style: none;
   padding: 0;
-  margin: 15px 0;
+  margin: 25px 0 10px 0;
 }
 
 .plan ul li {
   font-size: 0.9rem;
   color: #555;
-  margin: 5px 0;
+  margin: 12px 0;
+}
+
+.features li {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Space between the icon and text */
+}
+
+.features ion-icon {
+  font-size: 1.2rem; /* Adjust icon size */
+  flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 /* Specific plan styles */
