@@ -557,63 +557,71 @@ section {
   text-align: left;
   max-width: 800px;
   margin: 0 auto;
-}
 
-.faq-content details {
-  margin-bottom: 8px;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  background: white;
-  transition: all 0.2s ease;
-}
+  details {
+    margin-bottom: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: white;
+    transition: all 0.2s ease;
 
-.faq-content details:hover {
-  background: #f7f7f7;
-}
+    &:hover {
+      border-color: #ffa200;
+      box-shadow: 0 2px 8px rgba(#ffa200, 0.1);
+      background: #fff;
+    }
 
-.faq-content summary {
-  padding: 16px;
-  cursor: pointer;
-  position: relative;
-  padding-left: 36px;
-  list-style: none;
-  font-weight: 500;
-}
+    &[open] {
+      border-color: #ffa200;
+      box-shadow: 0 2px 8px rgba(#ffa200, 0.1);
+      background: #fff;
 
-.faq-content summary::-webkit-details-marker {
-  display: none;
-}
+      summary {
+        &::before {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
 
-.faq-content summary::before {
-  content: "▸";
-  position: absolute;
-  left: 16px;
-  transition: transform 0.2s ease;
-}
+  summary {
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 36px;
+    list-style: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
 
-.faq-content details[open] summary::before {
-  transform: rotate(90deg);
-}
+    &::-webkit-details-marker {
+      display: none;
+    }
 
-.faq-content details[open] {
-  background: #f7f7f7;
-}
+    &::before {
+      content: '▸';
+      position: absolute;
+      left: 16px;
+      transition: transform 0.2s ease, color 0.2s ease;
+      color: #666;
+    }
+  }
 
-.faq-answer {
-  padding: 0 16px 16px 36px;
-  color: #666;
-  line-height: 1.6;
-}
+  .faq-answer {
+    padding: 0 16px 16px 36px;
+    color: #666;
+    line-height: 1.6;
 
-.faq-answer ul {
-  margin: 8px 0;
-  padding-left: 20px;
-}
+    ul {
+      margin: 8px 0;
+      padding-left: 20px;
+    }
 
-.faq-answer p {
-  margin: 8px 0;
-}
+    p {
+      margin: 8px 0;
+    }
 
-.faq-answer strong {
-  color: #333;
+    strong {
+      color: #333;
+    }
+  }
 }
